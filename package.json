@@ -1,0 +1,60 @@
+{
+  "name": "quiet-face-swap",
+  "author": "astosia",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.1.0"
+  },
+  "pebble": {
+    "displayName": "Face Swap",
+    "uuid": "b0a9f5d0-dbef-4293-b625-fc922b7b5177",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "capabilities": [
+      "configurable"
+    ],
+    "messageKeys": [
+      "ready",
+      "quietActive",
+      "syncQuiet",
+      "status",
+      "autoSwap",
+      "syncSun",
+      "nextSunChange",
+      "useToggle"
+    ],
+    "resources": {
+      "media": []
+    },
+    "usesPermissions": [
+      "LaunchApps",
+      "Location",
+      "ReadWatchSettings",
+      "WriteWatchSettings",
+      {
+        "name": "Internet",
+        "parameters": {
+          "domains": [
+            "gm3s9tryo4-dsn.algolia.net",
+            "7683ow76eq-dsn.algolia.net"
+          ]
+        }
+      }
+    ]
+  }
+}

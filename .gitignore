@@ -1,0 +1,24 @@
+# Ignore build generated files
+build/
+dist/
+dist.zip
+
+# Ignore waf lock file
+.lock-waf*
+.npmrc
+
+# Ignore installed node modules
+node_modules/
+
+# Ignore package-lock.json
+package-lock.json
+
+# Ignore tools & screenshots
+tools/
+screenshots/
+
+*Zone.Identifier
+
+*.zip
+
+*screenshot*
